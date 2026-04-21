@@ -248,6 +248,10 @@ body {
     color: var(--text-color);
 }
 
+.skill h3 {
+    text-align: center;
+}
+
 .skill-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

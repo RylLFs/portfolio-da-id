@@ -25,7 +25,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe sections
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.projects, .skill');
+    const sections = document.querySelectorAll('.projects, .skill, .certifications');
     sections.forEach((section) => {
         observer.observe(section);
     });
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const slideObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            const sections = document.querySelectorAll('.hero, .skill, .projects, .contact');
+            const sections = document.querySelectorAll('.hero, .skill, .projects, .certifications, .contact');
             const currentIndex = Array.from(sections).indexOf(entry.target);
             
             // Hero pakai fade-up
@@ -191,7 +191,7 @@ const slideObserver = new IntersectionObserver((entries) => {
 const cardObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            const cards = entry.target.querySelectorAll('.skill-card, .project-card');
+            const cards = entry.target.querySelectorAll('.skill-card, .project-card, .cert-card');
             
             cards.forEach((card, index) => {
                 setTimeout(() => {
@@ -206,7 +206,7 @@ const cardObserver = new IntersectionObserver((entries) => {
     threshold: 0.1
 });
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.hero, .skill, .projects, .contact');
+    const sections = document.querySelectorAll('.hero, .skill, .projects, .certifications, .contact');
     sections.forEach((section) => {
         section.style.opacity = '0'; // Hide dulu
         slideObserver.observe(section);
@@ -242,8 +242,9 @@ function openCertModal(certId) {
     
     // Map certificate IDs to image paths
     const certImages = {
-        'cert1': 'assets/images/cert-digitalent-full.png',
-        'cert2': 'assets/images/cert-google-full.png',
+        'cert1': 'assets/images/digitalentdts.jpg',
+        'cert2': 'assets/images/oracledatabasedesign.jpg',
+        'cert3': 'assets/images/oracledatabaseprogrammingsql.jpg',
         // Tambah mapping lainnya di sini
     };
     
