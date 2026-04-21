@@ -24,6 +24,7 @@
             <li><a href="#home">About Me</a></li>
             <li><a href="#skill">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -156,6 +157,66 @@
         </div>
     </div>
 </section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="certifications">
+    <div class="container">
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            
+            <!-- Certificate 1 -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="assets/images/cert-digitalent-completion.png" alt="Digital Talent Scouting">
+                    <div class="cert-overlay">
+                        <button class="btn-view" onclick="openCertModal('cert1')">View Certificate</button>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <h3>Digital Talent Scouting Program</h3>
+                    <p class="cert-issuer">Digitalent - Kominfo</p>
+                    <p class="cert-date">2024</p>
+                    <span class="cert-tag">Program Completion</span>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="assets/images/cert-oracle-design.png" alt="Database Design">
+                    <div class="cert-overlay">
+                        <button class="btn-view" onclick="openCertModal('cert2')">View Certificate</button>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <h3>Oracle Database Design</h3>
+                    <p class="cert-issuer">Oracle Academy - Digitalent</p>
+                    <p class="cert-date">2024</p>
+                    <span class="cert-tag">Technical Skill</span>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="assets/images/cert-oracle-programming.png" alt="Database Programming">
+                    <div class="cert-overlay">
+                        <button class="btn-view" onclick="openCertModal('cert3')">View Certificate</button>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <h3>Oracle Database Programming</h3>
+                    <p class="cert-issuer">Oracle Academy - Digitalent</p>
+                    <p class="cert-date">2024</p>
+                    <span class="cert-tag">Technical Skill</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal untuk view certificate fullscreen -->
+<div id="certModal" class="cert-modal">
+    <span class="cert-close" onclick="closeCertModal()">&times;</span>
+    <img class="cert-modal-content" id="certModalImg">
+</div>
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">

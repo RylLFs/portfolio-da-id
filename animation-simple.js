@@ -235,3 +235,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Certificate modal functions
+function openCertModal(certId) {
+    const modal = document.getElementById('certModal');
+    const modalImg = document.getElementById('certModalImg');
+    
+    // Map certificate IDs to image paths
+    const certImages = {
+        'cert1': 'assets/images/cert-digitalent-full.png',
+        'cert2': 'assets/images/cert-google-full.png',
+        // Tambah mapping lainnya di sini
+    };
+    
+    modal.style.display = 'block';
+    modalImg.src = certImages[certId];
+}
+
+function closeCertModal() {
+    const modal = document.getElementById('certModal');
+    modal.style.display = 'none';
+}
+
+// Close modal saat klik di luar gambar
+window.onclick = function(event) {
+    const modal = document.getElementById('certModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+// Close modal dengan ESC key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeCertModal();
+    }
+});
