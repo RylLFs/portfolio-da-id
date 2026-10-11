@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Data Analyst</title>
+    <link rel="stylesheet" href="dsesign.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-brand">PortfolioKuh</div>
+        
+        <!-- Hamburger button (mobile only) -->
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">About Me</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-layout">
+            <div class="hero-content fade-in">
+                <h1>Hi, I'm</h1>
+                <p class="subtitle">Mahasiswa Sistem Informasi | Data Analyst | System Analyst </p>
+                <p class="hero-description">
+                    Saya Eriel Firman S., mahasiswa Sistem Informasi semester enam dengan pengalaman dalam analisis data, 
+                    visualisasi, dan perancangan sistem melalui empat proyek akademik.
+                <div class="hero-buttons">
+                    <a href="assets/CV-Ryl.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View My CV</a>
+                </div>
+            </div>
+            <div class="hero-profile">
+                <img src="assets/images/foto Fansuiss.png" alt="Foto profil Eriel Firman S.">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Section -->
+<section id="skill" class="skill">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skill-grid">
+            <div class="skill-card fade-in-up">
+                <h3>Data Analysis & Visualization</h3>
+                <div class="skill-icons-grid">
+                    <div class="skill-icon-item">
+                        <img src="assets/iconapps/Python.png" alt="Python" />
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-icon-item">
+                        <img src="assets/iconapps/Jupyter.png" alt="Jupyter Notebook" />
+                        <span>Jupyter Notebook</span>
+                    </div>
+                    <div class="skill-icon-item">
+                        <img src="assets/iconapps/MySQL.png" alt="MySQL" />
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-icon-item">
+                        <img src="assets/iconapps/RapidMiner.png" alt="RapidMiner" />
+                        <span>RapidMiner</span>
+                    </div>
+                    <div class="skill-icon-item">
+                        <img src="assets/iconapps/PowerBI.png" alt="Power BI" />
+                        <span>Power BI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in-up">
+                <h3>Productivity & Reporting</h3>
+                <div class="skill-icons-grid">
+                      <div class="skill-icon-item">
+                        <img src="assets/iconapps/Excel.png" alt="Excel" />
+                        <span>Excel</span>
+                    </div>
+                    <div class="skill-icon-item">
+                        <img src="assets/iconapps/Word.png" alt="Word" />
+                        <span>Word</span>
+                    </div>
+                    <div class="skill-icon-item">
+                        <img src="assets/iconapps/Canva.png" alt="Canva" />
+                        <span>Canva</span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="card-carousel" data-carousel>
+            <button class="carousel-control" type="button" data-carousel-direction="-1" aria-label="Lihat proyek sebelumnya" disabled>
+                <span aria-hidden="true">&lsaquo;</span>
+            </button>
+            <div class="carousel-viewport" data-carousel-viewport role="region" aria-roledescription="carousel" aria-label="Daftar proyek" tabindex="0">
+                <div class="projects-grid carousel-track">
+                    <!-- Earthquake Analysis -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/earthquake-analysis.png" alt="Earthquake Analysis">
+                        </div>
+                        <div class="project-content">
+                            <h3>Earthquake Analysis</h3>
+                            <p class="project-category">Academic Project</p>
+                            <p class="project-date">2024</p>
+                            <div style="text-align: right;">
+                                <a href="projects/earthquake-analysis.html" class="btn btn-link" data-project-modal>View Project</a>
+                            </div>
+                        </div>
+                    </div>
+            <!-- IT Salary Association -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/it-salary-association-rule.png" alt="IT Salary Association">
+                </div>
+                <div class="project-content">
+                    <h3>IT Salary Association Rules</h3>
+                    <p class="project-category">Academic Project</p>
+                    <p class="project-date">2024</p>
+                    <div style="text-align: right;">
+                        <a href="projects/it-salary-association-rule.html" class="btn btn-link" data-project-modal>View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consumer Shopping -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/consumer-shopping.png" alt="Consumer Shopping">
+                </div>
+                <div class="project-content">
+                    <h3>Consumer Shopping Trends</h3>
+                    <p class="project-category">Academic Project</p>
+                    <p class="project-date">2025</p>
+                    <div style="text-align: right;">
+                        <a href="projects/consumer-shopping.html" class="btn btn-link" data-project-modal>View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Air Quality Classification -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/air-quality-classification.png" alt="Air Quality">
+                </div>
+                <div class="project-content">
+                    <h3>Air Quality Classification</h3>
+                    <p class="project-category">Academic Project</p>
+                    <p class="project-date">2025</p>
+                    <div style="text-align: right;">
+                        <a href="projects/air-quality-classification.html" class="btn btn-link" data-project-modal>View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control" type="button" data-carousel-direction="1" aria-label="Lihat proyek berikutnya">
+            <span aria-hidden="true">&rsaquo;</span>
+        </button>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="certifications">
+    <div class="container">
+        <h2>Certifications</h2>
+        <div class="card-carousel" data-carousel>
+            <button class="carousel-control" type="button" data-carousel-direction="-1" aria-label="Lihat sertifikasi sebelumnya" disabled>
+                <span aria-hidden="true">&lsaquo;</span>
+            </button>
+            <div class="carousel-viewport" data-carousel-viewport role="region" aria-roledescription="carousel" aria-label="Daftar sertifikasi" tabindex="0">
+                <div class="certifications-grid carousel-track">
+            
+                    <!-- Certificate 1 -->
+                    <div class="cert-card">
+                        <div class="cert-image">
+                            <img src="assets/images/digitalentdts.jpg" alt="Digital Talent Scouting">
+                            <div class="cert-overlay">
+                                <button class="btn-view" onclick="openCertModal('cert1')">View Certificate</button>
+                            </div>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Digital Talent Scouting Program</h3>
+                            <p class="cert-issuer">Digitalent - Kominfo</p>
+                            <p class="cert-date">2024</p>
+                            <span class="cert-tag">Program Completion</span>
+                        </div>
+                    </div>
+
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="assets/images/oracledatabasedesign.jpg" alt="Database Design">
+                    <div class="cert-overlay">
+                        <button class="btn-view" onclick="openCertModal('cert2')">View Certificate</button>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <h3>Oracle Database Design</h3>
+                    <p class="cert-issuer">Oracle Academy - Digitalent</p>
+                    <p class="cert-date">2024</p>
+                    <span class="cert-tag">Technical Skill</span>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="assets/images/oracledatabaseprogrammingsql.jpg" alt="Database Programming">
+                    <div class="cert-overlay">
+                        <button class="btn-view" onclick="openCertModal('cert3')">View Certificate</button>
+                    </div>
+                </div>
+                <div class="cert-content">
+                    <h3>Oracle Database Programming</h3>
+                    <p class="cert-issuer">Oracle Academy - Digitalent</p>
+                    <p class="cert-date">2024</p>
+                    <span class="cert-tag">Technical Skill</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control" type="button" data-carousel-direction="1" aria-label="Lihat sertifikasi berikutnya">
+            <span aria-hidden="true">&rsaquo;</span>
+        </button>
+        </div>
+    </div>
+</section>
+<!-- Modal untuk view certificate fullscreen -->
+<div id="certModal" class="cert-modal">
+    <span class="cert-close" onclick="closeCertModal()">&times;</span>
+    <img class="cert-modal-content" id="certModalImg">
+</div>
+<dialog id="projectModal" class="project-modal" aria-labelledby="projectModalTitle">
+    <div class="project-modal-header">
+        <h2 id="projectModalTitle">Detail Proyek</h2>
+        <button class="project-modal-close" type="button" aria-label="Tutup detail proyek">&times;</button>
+    </div>
+    <iframe class="project-modal-frame" title="Detail proyek"></iframe>
+</dialog>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out to me for collaboration or inquiries ;)</p>
+            <div class="contact-links">
+                <a href="mailto:ryll@gmail.com" class="btn btn-secondary">Gmail</a>
+                <a href="https://github.com/RylLFs" class="btn btn-secondary" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/ryllfansuiss" class="btn btn-secondary" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/ryll.fansuiss27/" class="btn btn-secondary" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ErilFs. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="animation-simple.js"></script>
+</body>
+</html>
